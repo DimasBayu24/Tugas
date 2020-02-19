@@ -1,8 +1,12 @@
-.sidebar{
+
+* {
+    box-sizing: border-box;
+  }
+  .sidebar{
     z-index: 5;
     position: absolute;
 width: 347px;
-height: 1024px;
+height: 100%;
 left: 0px;
 top: 0px;
 
@@ -19,7 +23,7 @@ box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
   
    
 }
-.buronan{
+.profile-pic{
     position: absolute;
     left: 94px;
     top: 66px;
@@ -36,7 +40,7 @@ box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
     z-index: 5;
 
 }
-.nama{
+.name{
     
 position: absolute;
 width: 244px;
@@ -76,7 +80,7 @@ width: 100%;
 height: 80px;
 flex-direction: row;
 justify-content: flex-end;
-margin-right: auto;
+
 
 
 align-items: center;
@@ -148,11 +152,11 @@ width: 50px;
 height: 50px;
 
 }
-/* .libra{
+.libra{
 width: 190px;
 height: 47px;
-margin: 0pt; */
-/* padding-right: 0px; */
+margin: 0pt; 
+padding-right: 0px;
 
 
 font-family: Airbnb Cereal App;
@@ -163,6 +167,7 @@ color: #424242;
 }
 .boxmid{
     padding-top: 2%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -174,9 +179,9 @@ color: #424242;
     width: 600px;
 height: 250px;
 padding-right: 15px;
-/* border-radius: 15px; */
+ border-radius: 15px;
 }
-.ubur{
+.bookpic{
     width: 600px;
     height: 250px; 
     border-radius: 15px;
@@ -189,12 +194,12 @@ padding-left: 15px;
 /* border-radius: 15px; */
 
 }
-.ubur1{
+.bookpic1{
     width: 600px;
     height: 300px;
     border-radius: 15px;
 }
-.judul1{
+.name1{
     z-index: 2;
     margin-top: -120px;
     padding-left: 50px;
@@ -206,7 +211,7 @@ line-height: 46px;
 
 color: #FFFFFF;
 }
-.pengarang1{
+.writer1{
     z-index: 2;
     margin-top: -50px;
     padding-left: 50px;
@@ -218,7 +223,7 @@ line-height: 22px;
 
 color: #FFFFFF;
 }
-.karosel1{
+.carousel1{
    padding-left: 520px;
     margin-top: -170px;
     display: flex;
@@ -242,7 +247,7 @@ padding-left: 15px;
     border-top-left-radius: 15px;
 border-bottom-left-radius: 15px;
 }
-.judul2{
+.name2{
     z-index: 2;
     margin-top: -90px;
     padding-left: 40px;
@@ -254,7 +259,7 @@ line-height: 46px;
 
 color: #FFFFFF;
 }
-.pengarang2{
+.writer2{
     z-index: 2;
     margin-top: -70px;
     padding-left: 40px;
@@ -266,7 +271,7 @@ line-height: 22px;
 
 color: #FFFFFF;
 }
-.karosel2{
+.carousel2{
    
     margin-top: -180px;
     display: flex;
@@ -287,7 +292,7 @@ box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25)
     width: 55%;
 height: 60px;
 }
-.katamutiara{
+.char-listbook{
 font-family: Airbnb Cereal App;
 font-size: 50px;
 line-height: 33px;
@@ -297,8 +302,10 @@ color: #424242;
 }
 .boxbot{
     padding-top: 5%;
+    width: 100%;
  display: flex;
  justify-content: space-between;
+ align-items: center;
  height: 340px;   
  width: 100%;
 }
@@ -345,21 +352,34 @@ border-radius: 15px;
 .bot1{
     padding-left: 110px;
 }
-/* .bot1{
-    width: 130.74px;
-height: 56px;
-font-family: Airbnb Cereal App;
-font-size: 22px;
-line-height: 29px;
 
-color: #424242;
+@media screen and (max-width: 1200px) {
+.boxbot{
+    flex-direction: column;
 }
-.botbot1{
-    width: 296px;
-height: 60px;
-font-family: Airbnb Cereal App;
-font-size: 15px;
-line-height: 20px;
-
-color: #424242;
-} */
+.boxmid{
+    flex-direction: column;
+}
+.search{
+    margin-right: 50px;
+}
+.boxbot1{
+    margin-top: 20px;
+}
+.boxmid2{
+    margin-top: 100px;
+}
+.boxmid3{
+    margin-top: 10px;
+}
+.listbook{
+    margin-top: 510px;
+}
+.katamutiara{
+    justify-content: center;
+    margin-left: 500px;
+}
+.sidebar, .menu-btn, .profile-pic, .name, .data{
+display: none
+}
+}
